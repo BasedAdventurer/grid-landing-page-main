@@ -55,7 +55,7 @@ const handleNavKeydown = (e) => {
     // push (put navToggler to the last index of array(focusable)) if navToggler comes after the nav
     // Skip if the close toggle button is inside the nav
     if ($navToggler && !$navToggler.disabled) {
-        focusable.push($navToggler);
+        focusable.unshift($navToggler);
     }
     // If there isnt a focusable element inside the trap => return
     if (focusable.length === 0) return;
@@ -98,7 +98,7 @@ const setPageInert = (isInert) => {
 // ---------------------------------
 
 const openNavbar = () => {
-    setPageInert(true);
+    // setPageInert(true);
     $nav.setAttribute("data-visible", "true");
     $overlay.classList.add("active");
     $navToggler.setAttribute("aria-expanded", "true");
@@ -111,7 +111,7 @@ const openNavbar = () => {
 };
 
 const closeNavbar = () => {
-    setPageInert(false);
+    // setPageInert(false);
     $nav.setAttribute("data-visible", "false");
     $overlay.classList.remove("active");
     $navToggler.setAttribute("aria-expanded", "false");
