@@ -248,10 +248,8 @@ button {
     background-color: hsl(var(--clr-neutral-white));
     border-radius: 50%;
     font-size: 0.75rem;
-
     aspect-ratio: 1;
     width: 1.1rem;
-    padding: .75em;
 }
 
 .menu-btn {
@@ -267,7 +265,7 @@ button {
     padding-block: 3.5rem;
     z-index: 101;
     opacity: 0;
-    transform: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 
     &[data-visible="true"] {
         opacity: 1;
@@ -279,7 +277,8 @@ button {
 }
 
 
-.nav__link:hover {
+.nav__link:hover,
+.nav__link:focus-visible {
     border-bottom: 2px solid hsl(var(--clr-neutral-white));
 }
 
