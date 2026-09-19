@@ -333,12 +333,16 @@ button {
 /* ------------------------- */
 
 .hero-section {
-    padding-block: 5rem;
-    padding-inline: 2.5rem;
+    padding: 5rem 2.5rem;
     border-bottom: 1px solid hsl(var(--clr-primary-blue-400));
     --gap: 1.2rem;
-    
 }
+
+.hero-section > .hero-section__subtitle {
+    line-height: 1.7;
+}
+
+
 
 
 
