@@ -429,6 +429,7 @@ button {
     .nav {
         border-top: 1px solid hsl(var(--clr-primary-blue-400));
         top: 7.7rem;
+        padding-block: 5rem;
     }
 }
 
