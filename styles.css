@@ -335,11 +335,12 @@ button {
 }
 
 /* ------------------------- */
-/* Site Main Styling       */
+/* Site Main Styling         */
 /* ------------------------- */
 
 .hero-section {
     padding: 5rem 2.5rem;
+    justify-content: center;
     border-bottom: 1px solid hsl(var(--clr-primary-blue-400));
     --gap: 1.2rem;
     min-height: 30rem;
@@ -354,7 +355,7 @@ button {
     justify-content: space-between;
     min-height: 30rem;
 
-    border-bottom: 1px solid hsl(var(--clr-primary-blue-400));
+    border: 1px solid hsl(var(--clr-primary-blue-400));
 }
 
 .stat-card__top {
@@ -370,6 +371,31 @@ button {
     padding: 2rem 2.5rem;
 }
 
+/* ------------------------- */
+/* GRID SETUP                */
+/* ------------------------- */
+
+@media (min-width: 35em) {
+    .site-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-section {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width: 45em) {
+    .site-main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .hero-section {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
 
 
 
