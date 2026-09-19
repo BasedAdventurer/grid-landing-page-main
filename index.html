@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="nav.js" defer></script>
 </head>
-<body>
+<body class="flex-column">
     <a class="skip-to-content" href="#site-main">Skip to content</a>
 
     <div class="overlay neutral-black" id="overlay"></div>
@@ -25,7 +25,7 @@
         </button>
 
         <nav class="nav blue-700" data-visible="false" data-nav inert>
-            <ul class="nav__list flex flex-column" style="--gap: 1.3rem;">
+            <ul class="nav__list flex flex-column">
                 <li class="nav__item"><a href="#" class="nav__link fs-600 fw-500">About</a></li>
                 <li class="nav__item"><a href="#" class="nav__link fs-600 fw-500">Our Work</a></li>
                 <li class="nav__item"><a href="#" class="nav__link fs-600 fw-500">Partners</a></li>
@@ -35,7 +35,7 @@
         </nav>
     </header>
 
-    <main id="site-main" class="site-main grid" style="--gap: 0;">
+    <main id="site-main" class="site-main grid">
       <section class="hero-section flex flex-column">
         <h1 class="hero-section__title fs-800 fw-400">A classroom for every child</h1>
         <p class="hero-section__subtitle fs-300 fw-200">
@@ -44,59 +44,59 @@
       </section>
       
       <!-- Stat 1 : Students reached -->
-      <div class="stat-card flex-column">
+      <div class="stat-card flex-column stat-card--1">
         <div class="stat-card__top flex">
           <img class="stat-card__icon" src="assets/images/icon-sparkle.svg" alt="">
           <p class="stat-card__number fs-700 uppercase">2.4m</p>
         </div>
 
-        <div class="stat-card__bottom flex-column" style="--gap: 0.2rem;">
+        <div class="stat-card__bottom flex-column">
           <h2 class="stat-card__title fs-300 fw-500">Students reached</h2>
           <p class="stat-card__subtitle fs-200 fw-200">Across 31 countries since 2011.</p>
         </div>
       </div>
 
       <!-- Stat 2 : Schools partnered -->
-      <div class="stat-card flex-column">
+      <div class="stat-card flex-column stat-card--2">
         <div class="stat-card__top flex">
           <img class="stat-card__icon" src="assets/images/icon-plus.svg" alt="">
           <p class="stat-card__number fs-700 uppercase">1,284</p>
         </div>
 
-        <div class="stat-card__bottom flex-column" style="--gap: 0.2rem;">
+        <div class="stat-card__bottom flex-column">
           <h2 class="stat-card__title fs-300 fw-500">Schools partnered</h2>
           <p class="stat-card__subtitle fs-200 fw-200">In 14 countries, from Kenya to Guatemala.</p>
         </div>
       </div>
 
       <!-- Stat 3 : Teachers trained -->
-      <div class="stat-card flex-column">
+      <div class="stat-card flex-column stat-card--3">
         <div class="stat-card__top flex">
           <img class="stat-card__icon" src="assets/images/icon-arrow-right.svg" alt="">
           <p class="stat-card__number fs-700 uppercase">38k</p>
         </div>
 
-        <div class="stat-card__bottom flex-column" style="--gap: 0.2rem;">
+        <div class="stat-card__bottom flex-column">
           <h2 class="stat-card__title fs-300 fw-500">Teachers trained</h2>
           <p class="stat-card__subtitle fs-200 fw-200">Equipped with modern tools and methodology.</p>
         </div>
       </div>
 
       <!-- Stat 4 : Graduation lift -->
-      <div class="stat-card flex-column">
+      <div class="stat-card flex-column stat-card--4">
         <div class="stat-card__top flex">
           <img class="stat-card__icon" src="assets/images/icon-trending-up.svg" alt="">
           <p class="stat-card__number fs-700 uppercase">3.1&times;</p>
         </div>
 
-        <div class="stat-card__bottom flex-column" style="--gap: 0.2rem;">
+        <div class="stat-card__bottom flex-column">
           <h2 class="stat-card__title fs-300 fw-500">Graduation lift</h2>
           <p class="stat-card__subtitle fs-200 fw-200">Partner schools outperform national averages 3x.</p>
         </div>
       </div>
     </main>
     
-    <footer id="site-footer" class="site-footer flex-column" style="--gap: 0.2rem;">
+    <footer id="site-footer" class="site-footer flex-column">
       <p class="site-footer__title fs-200 fw-300">&copy; 2026 Bridge Collective</p>
       <p class="site-footer__subtitle fs-200 fw-300">Registered charity 12345678</p>
     </footer>
